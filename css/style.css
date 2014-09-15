@@ -1,0 +1,79 @@
+/* reset.css */
+a, abbr, acronym, address, applet, article, aside, audio,
+b, blockquote, big, body,
+center, canvas, caption, cite, code,
+datalist, dd, del, details, dfn, dl, div, dt,
+em, embed,
+fieldset, figcaption, figure, footer,
+h1, h2, h3, h4, h5, h6, header, html,
+i, iframe, img, ins,
+kbd,
+keygen,
+label, legend, li,
+meter,
+nav,
+object, ol, output,
+p, pre, progress,
+q,
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, th, td, video, tt,
+u, ul,
+var, form {margin: 0; padding: 0; font-size: 100%; vertical-align: top;}
+img, fieldset, legend, iframe {border: 0 none;}
+li {list-style: none;}
+img {vertical-align:top;}
+
+hr, caption {display:none;}
+em {font-style: normal;}
+legend {width:1px; height:1px; font-size:0; line-height:0; text-indent:-9999em; position:absolute; top:0; left:-1000%; overflow:hidden;}
+
+a, a:link, a:visited {color: #565656; text-decoration: none;}
+a:focus, a:active {background-color:transparent; color: #649202;}
+a:hover {color: #649202; text-decoration: none;}
+
+h1 {font-size: 1.333em; font-weight: bold;}/* 16px */
+h2 {font-size: 1.167em; font-weight: bold;}/* 14px */
+h3 {font-size: 1.000em; font-weight: bold;}/* 12px */
+h4 {font-size: 0.917em; font-weight: bold;}/* 11px */
+
+input {font-family:'NanumGothic',Dotum,Gulim,sans-serif; font-size:1em; line-height:1.3em;}
+
+address {font-style:normal;}
+.skipNavi {position:absolute; left:-9999em; z-index:-1;}
+.blind{position:absolute; left:-1000%; top:0; width:1px; height:1px; font-size:0; line-height:0; text-indent:-9999em; overflow:hidden;}
+.button {display:block; text-indent:-9999em; border:0; overflow:hidden; cursor:pointer;}
+
+input, textarea, button, .ui-focus {outline:none !important; -webkit-appearance:none !important; box-shadow:none !important;}
+::-moz-selection {background:#4195f5; color:#fff;}
+::selection {background:#4195f5; color:#fff;}
+button {text-indent:-9999em; overflow:hidden; cursor:pointer;}
+button[disabled=disabled] {background:#c8ced6 !important;}
+
+#wrap {position:relative; margin:0 20px; font:62.5% Georgia,"Times New Roman",Times,serif;}
+
+header {padding:15px 0 20px; border-bottom:3px solid #000;}
+header a {display:block; margin:0 0 0 20px; width:296px; height:50px;}
+
+#container header {padding:35px 0 15px; border-bottom:1px solid #000; overflow:hidden;}
+header .desLeft {float:left; width:40%; margin:0 0 0 20px;}
+header .desRight {float:right; width:40%; margin-right:10px; padding:40px 0 0 0;}
+header .desRight img {width:100%;}
+header h2 {padding:0 0 25px; font-size:3.1em; color:#464646; line-height:1.4em;}
+#container header p {overflow:hidden;}
+#container header p input, #container header p label {float:left;}
+#container header input {width:14px; height:14px; margin:11px 5px 0 0; vertical-align:middle;}
+#container header p label {width:90%; font-size:1.7em; line-height:1.8em; vertical-align:middle;}
+#container header p label strong {font-size:1.3em;}
+header p button[type=submit] {float:left; display:block; width:218px; height:58px; margin:20px 0 0 0; background:url(http://digitalaccess.bostonglobe.com/da/33/images/1/cta.jpg) no-repeat 0 0; border:0;}
+.content {margin:25px 0 0 20px;}
+.content h3 {font-size:2.3em; margin:0 0 35px;}
+.content ul {margin:0 0 0 20px;}
+.content ul li {margin:0 0 25px; font-size:1.8em; line-height:30px; list-style:disc;}
+.content .infomationArea {overflow:hidden;}
+.content .description {float:left; width:45%;}
+.content .movieArea {float:right; width:45%;}
+.content p {width:45%; font-size:1.8em; line-height:1.4em;}
+.content img {display:inline-block; margin:20px 0;}
+.banner {position:absolute; top:0; right:0;}
+
+footer p {margin:30px 0; font-size:1.2em; color:#6F6F6F;}
