@@ -3,6 +3,8 @@
 ### The Boston Globe
 http://www.bostonglobe.com/
 
+변경 - http://digitalaccess.bostonglobe.com/da/33/?eglobe_rc=WW113960&p1=BGMessageBar
+
 ## 룰(Role)
 * 1달 + α
 * 신촌 토즈
