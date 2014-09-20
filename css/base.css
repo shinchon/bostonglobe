@@ -1,0 +1,52 @@
+/* wrap */
+.wrap {margin: 0 auto; padding: 0 20px; max-width: 986px; position: relative; font: normal 62.5% Georgia, "Times New Roman", Times, serif;}
+
+/* header */
+header.top {padding: 15px 0 20px; border-bottom: 3px solid #000;}
+header.top a {display: block; margin-left: 20px; width: 296px; height: 50px; overflow: hidden;}
+header.top .deco {position: absolute; right: 0; top: 0;}
+
+/* content */
+.content article:first-child {padding: 35px 0 7.3% 20px; border-bottom: 1px solid #000; padding-right: 53%; background: url(../images/img.jpg) no-repeat; background-position: 98% 75px; background-size: 45%;}
+.content article:first-child h1 {font-size: 3.1em; margin: 0 0 25px 0; color: #464646; line-height: 1.4em; font-weight: bold;}
+.content article:first-child .option {overflow: hidden; margin: 0 0 20px; line-height: 30px;}
+.content article:first-child .option input {float: left; display: block; margin: 7px 7px 0 0;}
+.content article:first-child .option label {float: left; width: 90%; font-weight: bold; color: #464646; font-size: 2em;}
+.content article:first-child .option p {clear: both; margin-left: 25px; font-size: 1.8em;}
+
+.content article {padding-top: 25px; overflow: hidden;}
+.content article:last-child div {margin-left: 20px; width: 45%; float: left;}
+.content article:last-child iframe {width: 45%; float: right;}
+.content article:last-child h1 {margin-bottom: 35px; font-size: 2.3em; font-weight: bold;}
+.content article:last-child ul {padding-left: 20px; list-style: disc; font-size: 1.8em; line-height: 30px;}
+.content article:last-child li {margin-bottom: 25px;}
+.content article:last-child strong {font-weight: bold;}
+.content article:last-child p {font-size: 1.8em; line-height: 30px;}
+.content article:last-child a {display: block; width: 293px; height: 30px; margin: 20px 0;}
+
+/* footer */
+footer {margin: 30px 0; font-size: 11px; color: #6f6f6f; line-height: 20px;}
+
+
+/* max-width 660px */
+@media only screen and (max-width: 660px) {
+	header.top a {margin-left: 0; width: 280px; height: 47px;}
+	header.top img {width: 280px; height: 47px;}
+	header.top .deco {display: none;}
+
+	.content article:first-child {padding: 35px 0 15px 0; background: none;}
+	.content article:first-child { padding-right: 0; background: none;}
+	.content article:first-child h1 {font-size: 2.6em;}
+	.content article:first-child .option p {font-size: 1.9em;}
+
+	.content article:last-child div {width: 100%; margin-left: 0; float: none;}
+	.content article:last-child h1 {font-size: 2.4em;}	
+	.content article:last-child ul {font-size: 1.9em;}
+	.content article:last-child span {display: none;}
+	.content article:last-child iframe {float: none; width: 100%; margin: 10px 0 59px 0;}
+	.content article:last-child p {font-size: 1.9em;}
+
+	.content article:last-child a {position: absolute; bottom: 100px; width: 280px; height: 29px; margin: 20px 0;}
+	.content article:last-child a img {width: 280px; height: 29px;}
+}
+
