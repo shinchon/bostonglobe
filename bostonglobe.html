@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>The Boston Globe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"/>
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+	<meta name="author" content="leeyonghee">
+	<meta name="generator" content="html5, css3"/>
+
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/bostonglobe.css"/>
+
+</head>
+<body>
+	<div id="wrap">
+		<a id="massageBar" href="http://digitalaccess.bostonglobe.com/da/33/?eglobe_rc=WW113960&p1=BGMessageBar">
+			You can now read 10 articles in a month for free on BostonGlobe.com. Read as much as you want anywhere and anytime for just 99¢.
+		</a>
+		<header>
+			<nav id="header_sub_nav1">
+				<ul>
+					<li><a href="http://www.boston.com/?p1=BGHeader_BComLogo">BOSTON.COM</a></li>
+					<li><a href="http://www.boston.com/cars/?p1=BGHeader_Cars">CARS</a></li>
+					<li><a href="http://www.boston.com/jobs/?p1=BGHeader_Jobs">JOBS</a></li>
+					<li><a href="http://www.boston.com/realestate/?p1=BGHeader_RE">REAL ESTATE</a></li>
+				</ul>
+			</nav>
+			<nav id="header_sub_nav1_980">
+				<ul>
+					<li>CLASSIFIEDS
+						<ul id="depth1">
+							<li><a href="http://www.boston.com/cars/?p1=BGHeader_Cars">CARS</a></li>
+							<li><a href="http://www.boston.com/jobs/?p1=BGHeader_Jobs">JOBS</a></li>
+							<li><a href="http://www.boston.com/realestate/?p1=BGHeader_RE">REAL ESTATE</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav id="header_sub_nav2">
+				<ul>
+					<li>SUBSCRIBE:</li>
+					<li><a href="http://digitalaccess.bostonglobe.com/da/2/1?eglobe_rc=WW111946&globe_rc=WW111947&p1=BGHeader_DigitalSubscription">DIGITAL</a></li>
+					<li><a href="http://homedelivery.bostonglobe.com/hd/control/order/zip/?rc=WW011964&p1=BGHeader_HomeDeliverySubscription">HOME DELIVERY</a></li>
+					<li><a href="https://www.bostonglobe.com/eom/SysConfig/WebPortal/BostonGlobe/Framework/regi/final-login.jsp?p1=BGHeader_LogIn">LOG IN</a></li>
+				</ul>
+			</nav>
+			<nav id="header_sub_nav2_810">
+				<ul>
+					<li><a href="https://www.bostonglobe.com/eom/SysConfig/WebPortal/BostonGlobe/Framework/regi/final-login.jsp?p1=BGHeader_LogIn">LOG IN</a></li>
+				</ul>
+			</nav>
+			<h1>
+				<a href="http://www.bostonglobe.com/"><img src="images/bostonglobe/logo-bg.png" alt="bostonglobe logo"/></a>
+			</h1>
+			<div id="search_bx">
+				<input type="search" id="search" placeholder="Search" />
+				<button><!-- search btb --></button>
+			</div>
+
+			<div id="gnb">
+				<nav>
+					<ul>
+						<li><a href="#"></a>NEWS</li>
+						<li><a href="#"></a>METRO</li>
+						<li><a href="#"></a>ARTS</li>
+						<li><a href="#"></a>BUSINESS</li>
+						<li><a href="#"></a>SPORTS</li>
+						<li><a href="#"></a>OPINION</li>
+						<li><a href="#"></a>POLITICS</li>
+						<li><a href="#"></a>LIFESTYLE</li>
+						<li><a href="#"></a>MAGAZINE</li>
+						<li><a href="#"></a>INSIDERS</li>
+						<li><a href="#"></a>TODAY'S PAPER</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="gnb_small">
+				<nav>
+
+				</nav>
+			</div>
+		</header>
+
+		<div id="contents">
+
+
+		</div>
+		<footer>
+
+		</footer>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script>
+		$(function(){
+
+			$('#header_sub_nav1_980').hover(function(){
+				$(this).find('#depth1').css('display','block');
+			}, function(){
+				$(this).find('#depth1').css('display','none');
+			});
+
+		});
+	</script>
+</body>
+</html>

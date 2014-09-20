@@ -1,0 +1,429 @@
+@charset "utf-8";
+
+body{
+	font: normal 62.5% "Helvetica", Arial, sans-serif;
+
+}
+
+#wrap{
+	width: 100%;
+}
+
+#massageBar{
+	display: block;
+	width:90%;
+	margin: 0 auto;
+	margin-top:.7em;
+	padding:1em;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	color:#9B1518;
+	background-color:#FFFFE5;
+	border:1px solid #E6E6DC;
+}
+#massageBar:hover{
+	color:#000;
+}
+header{
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	margin-top:3em;
+}
+header h1{
+	position:relative;
+	width:50%;
+	margin:0 auto;
+	padding:2em 2em 3em 2em;
+	text-align: center;
+}
+header h1 a img{
+	width:auto;/* width : 100% 와 auto의 차이 - 100%는 border와 margin값에 따라서 scrollbar가 생길 가능성이 있음. auto는 border와 margin값을 조절하여 scrollbar가 생기지 않음*/
+	max-width:100%;
+}
+
+#header_sub_nav1{
+	display: none;
+}
+#header_sub_nav2{
+	display: none;
+}
+#header_sub_nav1_980{
+	position:relative;
+	float:left;
+	height:1.6em;
+	cursor: pointer;
+}
+#header_sub_nav1_980 ul > li #depth1{
+	display:none;
+	position:absolute;
+	top:1.5em;
+	border:1px solid #ddd;
+	z-index:100;
+	background-color: #fff;
+}
+#header_sub_nav1_980 ul > li #depth1 > li{
+	width:220px;
+	cursor: pointer;
+	padding:.5em .2em;
+}
+#header_sub_nav1_980 ul > li #depth1 > li:nth-child(1),#header_sub_nav1_980 ul > li #depth1 > li:nth-child(2){
+	border-bottom: 1px solid #ddd;
+}
+
+#header_sub_nav1_980 ul > li #depth1 > li a{
+	color:#444;
+}
+
+#header_sub_nav2_810{
+	position:relative;
+	float:right;
+	height:1.6em;
+}
+#header_sub_nav2_810 ul li a{
+	color:#999999;
+}
+
+header #search_bx{
+	position: absolute;
+	bottom:0;
+	width:100%;
+	text-align:center;
+}
+header #search_bx #search{
+	width:86%;
+	height: 2.8em;
+	outline:none;
+	font-size:12px;
+	padding-left: .3em;
+	border:1px solid #a9a9a9;
+}
+header #search_bx button{
+	width: 3.5em;
+	height:3.3em;
+	background: url('../images/bostonglobe/icon-search.png') 50% 50% no-repeat;
+	background-color: #ddd;
+	border:1px solid #a9a9a9;
+	border-left:0;
+	margin-left:-3px;
+}
+
+
+
+
+/* Media Query */
+
+/* 테블릿, 노트북, 데스크탑 공통 */
+/*@media all and (min-width:768px){
+
+}*/
+
+/* 테블릿, 노트북 */
+/*@media all and (min-width:768px) and (max-width:1024px){
+
+}*/
+
+/* desktop */
+/*@media all and (min-width:1025px){
+	#wrap{
+
+	}
+}*/
+
+
+@media all and (min-width:640px){
+
+}
+
+@media all and (min-width:641px) and (max-width:810px){
+
+	/* header */
+	header h1{
+		padding-bottom: 3em;
+	}
+	#header_sub_nav1{
+		display: none;
+	}
+	#header_sub_nav2{
+		display: none;
+	}
+	#header_sub_nav1_980{
+		position:relative;
+		float:left;
+		height:1.6em;
+		cursor: pointer;
+	}
+	#header_sub_nav1_980 ul > li #depth1{
+		display:none;
+		position:absolute;
+		top:1.5em;
+		border:1px solid #ddd;
+		z-index:100;
+		background-color: #fff;
+	}
+	#header_sub_nav1_980 ul > li #depth1 > li{
+		width:220px;
+		cursor: pointer;
+		padding:.5em .2em;
+	}
+	#header_sub_nav1_980 ul > li #depth1 > li:nth-child(1),#header_sub_nav1_980 ul > li #depth1 > li:nth-child(2){
+		border-bottom: 1px solid #ddd;
+	}
+
+	#header_sub_nav1_980 ul > li #depth1 > li a{
+		color:#444;
+	}
+
+	#header_sub_nav2_810{
+		position:relative;
+		float:right;
+		height:1.6em;
+	}
+	#header_sub_nav2_810 ul li a{
+		color:#999999;
+	}
+
+	header #search_bx{
+		position: absolute;
+		bottom:0;
+		right:0;
+		width:50%;
+		text-align:right;
+	}
+	header #search_bx #search{
+		width:80%;
+		height: 2.8em;
+		outline:none;
+		font-size:12px;
+		padding-left: .3em;
+		border:1px solid #a9a9a9;
+	}
+	header #search_bx button{
+		width: 3.5em;
+		height:3.3em;
+		background: url('../images/bostonglobe/icon-search.png') 50% 50% no-repeat;
+		background-color: #ddd;
+		border:1px solid #a9a9a9;
+		border-left:0;
+		margin-left:-3px;
+	}
+
+	header #gnb{
+		display: none;
+	}
+
+}
+
+@media all and (min-width:811px) and (max-width: 980px){
+
+	/* header */
+	header h1{
+		padding: 2em;
+	}
+	#header_sub_nav1{
+		display:none;
+	}
+	#header_sub_nav2_810{
+		display:none;
+	}
+	#header_sub_nav1_980{
+		position:relative;
+		float:left;
+		height:1.6em;
+		cursor: pointer;
+	}
+	#header_sub_nav1_980 ul > li #depth1{
+		display:none;
+		position:absolute;
+		top:1.5em;
+		border:1px solid #ddd;
+		z-index:100;
+		background-color: #fff;
+	}
+	#header_sub_nav1_980 ul > li #depth1 > li{
+		width:220px;
+		cursor: pointer;
+		padding:.5em .2em;
+	}
+	#header_sub_nav1_980 ul > li #depth1 > li:nth-child(1),#header_sub_nav1_980 ul > li #depth1 > li:nth-child(2){
+		border-bottom: 1px solid #ddd;
+	}
+
+	#header_sub_nav1_980 ul > li #depth1 > li a{
+		color:#444;
+	}
+
+	#header_sub_nav2{
+		display: block;
+		float:right;
+	}
+	#header_sub_nav2 ul li{
+		display:inline-block;
+		color:#999999;
+	}
+	#header_sub_nav2 ul li:nth-child(1){
+		padding-right: 1em;
+	}
+	#header_sub_nav2 ul li:nth-child(2):after, #header_sub_nav2 ul li:nth-child(3):after{
+		content:'|';
+		padding: 0 .5em;
+	}
+	#header_sub_nav2 ul li a{
+		color:#9B1518;
+	}
+
+	header #search_bx{
+		position: absolute;
+		bottom:4.1em;
+		right:0;
+		width:40%;
+		text-align:right;
+	}
+	header #search_bx #search{
+		width:50%;
+		height: 2.3em;
+		outline:none;
+		font-size:12px;
+		padding-left: .3em;
+		border:1px solid #a9a9a9;
+	}
+	header #search_bx button{
+		width: 3.0em;
+		height:2.7em;
+		background: url('../images/bostonglobe/icon-search.png') 50% 50% no-repeat;
+		background-color: #ddd;
+		border:1px solid #a9a9a9;
+		border-left:0;
+		margin-left:-2px;
+	}
+
+	header #gnb{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	header #gnb nav ul{
+		display: table;
+		width: 100%;
+		border:1px solid #BBBBBB;
+	}
+	header #gnb nav ul > li{
+		display: table-cell;
+		width: auto;
+		cursor: pointer;
+		padding: 1em 0em;
+		line-height: 1;
+		font-weight: bold;
+	}
+	header #gnb nav ul > li:hover{
+		color:#A71518;
+	}
+}
+
+@media (min-width: 981px){
+
+	/* header */
+	header h1{
+		padding: 2em;
+	}
+	#header_sub_nav1_980{
+		display:none;
+	}
+	#header_sub_nav2_810{
+		display:none;
+	}
+	#header_sub_nav1{
+		display: block;
+		float:left;
+	}
+	#header_sub_nav1 ul li{
+		display:inline-block;
+	}
+	#header_sub_nav1 ul li:nth-child(1){
+		font-weight: bold;
+		background: url('../images/bostonglobe/base.gif') no-repeat 0px 50%;
+		padding:0 2em;
+	}
+	#header_sub_nav1 ul li:nth-child(2):after, #header_sub_nav1 ul li:nth-child(3):after{
+		content: '|';
+		padding: 0 .5em;
+	}
+	#header_sub_nav1 ul li a{
+		color:#444;
+	}
+
+	#header_sub_nav2{
+		display: block;
+		float:right;
+	}
+	#header_sub_nav2 ul li{
+		display:inline-block;
+		color:#999999;
+	}
+	#header_sub_nav2 ul li:nth-child(1){
+		padding-right: 1em;
+	}
+	#header_sub_nav2 ul li:nth-child(2):after, #header_sub_nav2 ul li:nth-child(3):after{
+		content:'|';
+		padding: 0 .5em;
+	}
+	#header_sub_nav2 ul li a{
+		color:#9B1518;
+	}
+
+	header #search_bx{
+		position: absolute;
+		bottom:4.1em;
+		right:0em;
+		width:40%;
+		text-align:right;
+	}
+	header #search_bx #search{
+		width:50%;
+		height: 2.3em;
+		outline:none;
+		font-size:12px;
+		padding-left: .3em;
+		border:1px solid #a9a9a9;
+	}
+	header #search_bx button{
+		width: 3.0em;
+		height:2.7em;
+		background: url('../images/bostonglobe/icon-search.png') 50% 50% no-repeat;
+		background-color: #ddd;
+		border:1px solid #a9a9a9;
+		border-left:0;
+		margin-left:-2px;
+	}
+
+	header #gnb{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	header #gnb nav ul{
+		display: table;
+		width: 100%;
+		border:1px solid #BBBBBB;
+	}
+	header #gnb nav ul > li{
+		display: table-cell;
+		width: auto;
+		cursor: pointer;
+		padding: 1em 0em;
+		line-height: 1;
+		font-weight: bold;
+	}
+	header #gnb nav ul > li:hover{
+		color:#A71518;
+		/*border-right: 1px solid #BBBBBB;
+		border-left: 1px solid #BBBBBB;*/
+	}
+
+
+}

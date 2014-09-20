@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+body{
+	font: normal 62.5% Georgia, "Times New Roman", Times, serif;
+}
+li{
+	list-style: inherit;
+}
+
+#wrap{
+	position: relative;
+	padding:0 20px;
+	max-width: 960px;
+	margin:0 auto;
+	overflow: hidden;
+}
+#wrap header{
+	position: relative;
+	border-bottom:1px solid #000;
+	border-width: 3px;
+}
+#wrap header h1{
+	padding:18px 0px;
+	text-align: left;
+}
+#wrap footer{
+	position: relative;
+}
+#wrap footer p{
+	font-size:1em;
+	line-height: 20px;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	color:#6f6f6f;
+}
+#banner{
+	position: absolute;
+	top:0;
+	right: 2em;
+	z-index: 100;
+}
+
+/* main_paper */
+#main_paper{
+	position: relative;
+	width:100%;
+	height:100%;
+	padding-top:2em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #000;
+	overflow:hidden;
+}
+#main_paper #main_txt{
+	float: left;
+	width:38%;
+	padding:2em;
+}
+#main_paper #main_txt h2{
+	font-size:2.8em;
+	color:#464646;
+	line-height:1.4em;
+	padding-bottom: 1em;
+
+}
+#main_paper #main_txt input{
+	float:left;
+	display:block;
+	margin:7px 7px 0 0;
+}
+#main_paper #main_txt label{
+	float:left;
+	width:90%;
+	font-size: 	1.9em;
+	font-weight: bold;
+	line-height:1.4em;
+}
+#main_paper #main_txt p{
+	clear: both;
+	font-size: 1.8em;
+	padding: 0.7em 0 1.4em 1.2em;
+}
+#main_paper #main_img{
+	float: right;
+	width: 45%;
+	padding:5em 3em 0 0;
+}
+#main_paper #main_img img{
+	width: 100%;
+}
+
+/* sub_paper */
+#sub_paper{
+	position: relative;
+	width:100%;
+	height:100%;
+	padding-top:2em;
+	padding-bottom: 2em;
+	overflow:hidden;
+}
+#sub_paper #sub_txt{
+	float: left;
+	width:38%;
+	padding:2em;
+}
+#sub_paper #sub_txt h3{
+	font-size:2em;
+	color:#464646;
+	line-height:1.4em;
+	padding-bottom: 1em;
+}
+#sub_paper #sub_txt ul{
+	font-size: 1.7em;
+	font-weight: bold;
+	padding-left: 1.1em;
+	line-height: 1.7em;
+}
+#sub_paper #sub_txt ul li{
+	padding-bottom: 1.2em;
+}
+#sub_paper #sub_txt ul li:nth-child(1):after{
+	content: ": Enjoy the same high-quality, in-depth journalism you get in the print edition - plus breaking news that's updated 24/7.";
+	font-weight: 100;
+}
+#sub_paper #sub_txt ul li:nth-child(2):after{
+	content: ": It's online news that looks and reads just like the newspaper - uncluttered, uninterrupted, and easy on the eyes.";
+	font-weight: 100;
+}
+#sub_paper #sub_txt ul li:nth-child(3):after{
+	content: ": The responsive design automatically adapts content so it always reads perfectly on the digital device of your choice - view the demo to see it in action.";
+	font-weight: 100;
+}
+#sub_paper #sub_txt ul li:nth-child(4):after{
+	content: ": Become a Boston Globe Insider and enjoy VIP access to exclusive content and special events with editorial staff, as well as offers and invitations from Globe partners and advertisers.";
+	font-weight: 100;
+}
+#sub_paper #sub_txt ul li:nth-child(5):after{
+	content: ": Access to digital content dating as far back as the 1800s.";
+	font-weight: 100;
+}
+#sub_paper #sub_txt p{
+	clear: both;
+	font-size: 1.7em;
+	padding: 0 0 1.4em 0;
+}
+#sub_paper #sub_vedio{
+	float: right;
+	width: 45%;
+	padding:5em 3em 0 0;
+}
+#sub_paper #sub_vedio iframe{
+	width: 100%;
+}
+
+/* media */
+@media (max-width: 660px){
+	#banner{
+		display:none;
+	}
+	#main_paper #main_txt{
+		float:none;
+		width:100%;
+		padding: 0;
+	}
+	#main_paper #main_img{
+		display:none;
+	}
+
+	#sub_paper #sub_txt{
+		float: none;
+		width:100%;
+		padding: 0;
+	}
+	#sub_paper #sub_txt ul li:after{
+		display:none;
+	}
+	#sub_paper #sub_vedio{
+		float: none;
+		width: 100%;
+		padding:0;
+	}
+}
