@@ -74,6 +74,20 @@ header p button[type=submit] {float:left; display:block; width:218px; height:58p
 .content .movieArea {float:right; width:45%;}
 .content p {width:45%; font-size:1.8em; line-height:1.4em;}
 .content img {display:inline-block; margin:20px 0;}
+.content .description p {width:100%;}
 .banner {position:absolute; top:0; right:0;}
 
 footer p {margin:30px 0; font-size:1.2em; color:#6F6F6F;}
+
+@media (max-width:640px) {
+    img.banner {display:none;}
+
+    header h1 a {margin-left:0;}
+    header .desLeft {width:100%; margin-left:0;}
+    header .desRight {display:none;}
+
+    .content {margin-left:0;}
+    .content .description {float:none; width:100%;}
+    .content .movieArea {float:none; width:100%; margin-top:8px;}
+    .content .description li span {display:none;}
+}
