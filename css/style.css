@@ -28,8 +28,8 @@ em {font-style: normal;}
 legend {width:1px; height:1px; font-size:0; line-height:0; text-indent:-9999em; position:absolute; top:0; left:-1000%; overflow:hidden;}
 
 a, a:link, a:visited {color: #565656; text-decoration: none;}
-a:focus, a:active {background-color:transparent; color: #649202;}
-a:hover {color: #649202; text-decoration: none;}
+a:focus, a:active {background-color:transparent; color: #000;}
+a:hover {color: #000; text-decoration: none;}
 
 h1 {font-size: 1.333em; font-weight: bold;}/* 16px */
 h2 {font-size: 1.167em; font-weight: bold;}/* 14px */
@@ -51,43 +51,64 @@ button[disabled=disabled] {background:#c8ced6 !important;}
 
 #wrap {position:relative; margin:0 20px; font:62.5% Georgia,"Times New Roman",Times,serif;}
 
-header {padding:15px 0 20px; border-bottom:3px solid #000;}
-header a {display:block; margin:0 0 0 20px; width:296px; height:50px;}
+.sub header {padding:15px 0 20px; border-bottom:3px solid #000;}
+.sub header a {display:block; margin:0 0 0 20px; width:296px; height:50px;}
 
-#container header {padding:35px 0 15px; border-bottom:1px solid #000; overflow:hidden;}
-header .desLeft {float:left; width:40%; margin:0 0 0 20px;}
-header .desRight {float:right; width:40%; margin-right:10px; padding:40px 0 0 0;}
-header .desRight img {width:100%;}
-header h2 {padding:0 0 25px; font-size:3.1em; color:#464646; line-height:1.4em;}
-#container header p {overflow:hidden;}
-#container header p input, #container header p label {float:left;}
-#container header input {width:14px; height:14px; margin:11px 5px 0 0; vertical-align:middle;}
-#container header p label {width:90%; font-size:1.7em; line-height:1.8em; vertical-align:middle;}
-#container header p label strong {font-size:1.3em;}
-header p button[type=submit] {float:left; display:block; width:218px; height:58px; margin:20px 0 0 0; background:url(http://digitalaccess.bostonglobe.com/da/33/images/1/cta.jpg) no-repeat 0 0; border:0;}
-.content {margin:25px 0 0 20px;}
-.content h3 {font-size:2.3em; margin:0 0 35px;}
-.content ul {margin:0 0 0 20px;}
-.content ul li {margin:0 0 25px; font-size:1.8em; line-height:30px; list-style:disc;}
-.content .infomationArea {overflow:hidden;}
-.content .description {float:left; width:45%;}
-.content .movieArea {float:right; width:45%;}
-.content p {width:45%; font-size:1.8em; line-height:1.4em;}
-.content img {display:inline-block; margin:20px 0;}
-.content .description p {width:100%;}
+.sub #container header {padding:35px 0 15px; border-bottom:1px solid #000; overflow:hidden;}
+.sub header .desLeft {float:left; width:40%; margin:0 0 0 20px;}
+.sub header .desRight {float:right; width:40%; margin-right:10px; padding:40px 0 0 0;}
+.sub header .desRight img {width:100%;}
+.sub header h2 {padding:0 0 25px; font-size:3.1em; color:#464646; line-height:1.4em;}
+.sub #container header p {overflow:hidden;}
+.sub #container header p input, #container header p label {float:left;}
+.sub #container header input {width:14px; height:14px; margin:11px 5px 0 0; vertical-align:middle;}
+.sub #container header p label {width:90%; font-size:1.7em; line-height:1.8em; vertical-align:middle;}
+.sub #container header p label strong {font-size:1.3em;}
+.sub header p button[type=submit] {float:left; display:block; width:218px; height:58px; margin:20px 0 0 0; background:url(http://digitalaccess.bostonglobe.com/da/33/images/1/cta.jpg) no-repeat 0 0; border:0;}
+.sub .content {margin:25px 0 0 20px;}
+.sub .content h3 {font-size:2.3em; margin:0 0 35px;}
+.sub .content ul {margin:0 0 0 20px;}
+.sub .content ul li {margin:0 0 25px; font-size:1.8em; line-height:30px; list-style:disc;}
+.sub .content .infomationArea {overflow:hidden;}
+.sub .content .description {float:left; width:45%;}
+.sub .content .movieArea {float:right; width:45%;}
+.sub .content p {width:45%; font-size:1.8em; line-height:1.4em;}
+.sub .content img {display:inline-block; margin:20px 0;}
+.sub .content .description p {width:100%;}
 .banner {position:absolute; top:0; right:0;}
 
-footer p {margin:30px 0; font-size:1.2em; color:#6F6F6F;}
+#wrap.main {width:94%; margin:0 auto; font-family:"Helvetica",Arial,sans-serif;}
+a.globalAdd {display:block; margin:10px auto; padding:1em; background:#ffffe5; border:1px solid #e6e6dc; font-size:1.3em; font-weight:bold; text-align:center; color:#9b1518;}
+#header {position:relative; height:104px; margin:15px 0 0 0; overflow:hidden;}
+#header .mainTitArea {position:absolute; top:0; left:50%; width:50%; margin:0 0 0 -27%; padding:40px 0 10px; text-align:center;}
+#header .mainTitArea .dateArea {position:absolute; top:0; left:0; width:100%; font-size:1.2em; color:#999; text-transform:uppercase;}
+#header .weatherArea {float:left; width:23%; margin:40px 0 0 0;}
+#header .bostonEtcArea {position:absolute; top:0; left:0; width:50%; overflow:hidden;}
+#header .bostonEtcArea p {float:left;}
+#header .bostonEtcArea p a {display:block; margin:0 10px 0 0; padding:0 0 0 16px; background:url("//c.o0bg.com/rw/SysConfig/WebPortal/BostonGlobe/Framework/images/icon-bostoncom.gif") no-repeat 0 50%; font-size:1.2em; color:#464646; vertical-align:middle; text-transform:uppercase;}
+#header .bostonEtcArea p a em {font-weight:bold; line-height:1.2em; vertical-align:middle;}
+#header .bostonEtcArea nav p {display:none;}
+#header .bostonEtcArea nav ul {float:left;}
+#header .bostonEtcArea nav ul li {float:left; margin:0 5px 0 0; padding:0 5px 0 0; border-right:1px solid #9b9b9b;}
+#header .bostonEtcArea nav ul li a {vertical-align:-1px; text-transform:uppercase;}
+#header .bostonEtcArea nav ul li.last {margin:0; padding:0; border-right:0;}
+#header .bostonSubscribeArea {position:absolute; top:0; right:0; width:50%; text-align:right; overflow:hidden;}
+#header .bostonSubscribeArea ul {float:right;}
+#header .bostonSubscribeArea ul li {float:left; margin:0 5px 0 0; padding:0.25em; background:#008000; border-radius:1em; font-size:1.1em;}
+#header .bostonSubscribeArea ul li a {color:#fff;}
+#header .searchArea {float:right; width:23%;}
+
+.sub footer p {margin:30px 0; font-size:1.2em; color:#6F6F6F;}
 
 @media (max-width:640px) {
     img.banner {display:none;}
 
-    header h1 a {margin-left:0;}
-    header .desLeft {width:100%; margin-left:0;}
-    header .desRight {display:none;}
+    .sub header h1 a {margin-left:0;}
+    .sub header .desLeft {width:100%; margin-left:0;}
+    .sub header .desRight {display:none;}
 
-    .content {margin-left:0;}
-    .content .description {float:none; width:100%;}
-    .content .movieArea {float:none; width:100%; margin-top:8px;}
-    .content .description li span {display:none;}
+    .sub .content {margin-left:0;}
+    .sub .content .description {float:none; width:100%;}
+    .sub .content .movieArea {float:none; width:100%; margin-top:8px;}
+    .sub .content .description li span {display:none;}
 }
